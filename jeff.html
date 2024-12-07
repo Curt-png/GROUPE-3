@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Secondaire</title>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: top;
+            height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Bandeau supérieur */
+        .header {
+            background-color: #007BFF; /* Bleu */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* Contenu principal */
+        .content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .menu-btn,
+        .back-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF; /* Bleu */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu-btn:hover,
+        .back-btn:hover {
+            background-color: #0056b3; /* Bleu foncé au survol */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Bandeau supérieur -->
+        <div class="header">
+            <p>GROUPE N° 01</p>
+            <p>Nom du Membre: Jeff DJAPA</p>
+        </div>
+
+        <!-- Contenu principal -->
+        <div class="content">
+            <button class="menu-btn">Menu Jeff D</button>
+            <button class="back-btn" onclick="window.location.href='index.html';">Retour page principale</button>
+        </div>
+    </div>
+</body>
+</html>
